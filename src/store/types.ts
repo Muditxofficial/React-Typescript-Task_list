@@ -139,6 +139,8 @@ interface SetNotificationAction {
     type: string;
   };
 }
+/**Each action type is a string but we need to use typeof and then the type otherwise typescript will complain and won’t know
+ * which type we want to use because we are exporting all types as union type and we will use just this union type in our actions. */
 
 export type ListsAction =
   | AddListAction

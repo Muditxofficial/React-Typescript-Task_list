@@ -19,13 +19,14 @@ import {
   UPDATE_TASK,
 } from "../types";
 
-export const addList = (list: List): ListsAction => {
+export const addList = (list: List) => {
   return {
     type: ADD_LIST,
     payload: list,
   };
 };
-
+/** in addList action we are using ListsAction as return type
+ *but since we are using ADD_LIST as a type typescript will know that we want to use AddListAction.*/
 export const getLists = (): ListsAction => {
   return {
     type: GET_LISTS,
