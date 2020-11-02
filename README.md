@@ -2,7 +2,7 @@ Official Documentation By Sole Maintainer-[Muditxofficial](https://github.com/Mu
 ----------------------------- ##DEPENDENCIES ----------------------------------------------------
 -All dependencies can be installed using npm i or viewed inside package.json.
 ----------------------------- ##Step-By-Guide ---------------------------------------------------
--This Guide shows how this app is Created.
+-This Guide shows how this app is created.
 -Start by deleteing all default content inside the react app.
 -Since we will using redux we import "provider" from react redux in `index.tsx`.
 -Then wrap the App component inside the provider component and pass store as props to later.
